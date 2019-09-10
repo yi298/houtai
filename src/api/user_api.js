@@ -37,3 +37,12 @@ export const getUserList = pa => {
     params:pa
   });
 };
+
+// 添加用户数据
+export const addUser = (data) => {
+  return axios({
+    method: 'post',
+    url: 'users',
+    data
+  })
+}
